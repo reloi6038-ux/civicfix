@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report an Issue — CivicFix</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  
+  <main>
+    <div class="container" style="max-width: 800px;">
+      <div class="mb-4">
+        <h1>Report a Community Issue</h1>
+        <p class="text-muted">Provide as much detail as possible. Photos help moderators verify faster.</p>
+      </div>
+
+      <form id="report-form" class="card" novalidate enctype="multipart/form-data">
+        <div class="form-group">
+          <label class="form-label" for="title">Title <span class="required">*</span></label>
+          <input class="form-input" id="title" name="title" type="text" required maxlength="200" placeholder="e.g. Large pothole on Main Street">
+          <div class="form-error" data-error-for="title"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="description">Description <span class="required">*</span></label>
+          <textarea class="form-textarea" id="description" name="description" required maxlength="5000" placeholder="Describe the issue, its impact, and how long it has existed…"></textarea>
+          <div class="form-error" data-error-for="description"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="category">Category <span class="required">*</span></label>
+            <select class="form-select" id="category" name="category" required>
+              <option value="">Select a category</option>
+            </select>
+            <div class="form-error" data-error-for="category"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="priority">Priority</label>
+            <select class="form-select" id="priority" name="priority">
+              <option value="Low">Low</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="High">High</option>
+              <option value="Critical">Critical</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="location">Location <span class="required">*</span></label>
+          <input class="form-input" id="location" name="location" type="text" required placeholder="e.g. Main Street near Central Market">
+          <div class="form-error" data-error-for="location"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="city">City <span class="required">*</span></label>
+            <input class="form-input" id="city" name="city" type="text" required placeholder="Owerri">
+            <div class="form-error" data-error-for="city"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="state">State <span class="required">*</span></label>
+            <input class="form-input" id="state" name="state" type="text" required placeholder="Imo">
+            <div class="form-error" data-error-for="state"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="country">Country <span class="required">*</span></label>
+          <input class="form-input" id="country" name="country" type="text" required value="Nigeria">
+          <div class="form-error" data-error-for="country"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="latitude">Latitude (Optional)</label>
+            <input class="form-input" id="latitude" name="latitude" type="number" step="any" placeholder="5.4836">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="longitude">Longitude (Optional)</label>
+            <input class="form-input" id="longitude" name="longitude" type="number" step="any" placeholder="7.0332">
+          </div>
+        </div>
+
+        <div class="form-group" style="padding: 1rem; background: var(--bg); border-radius: var(--radius-sm); border: 1px dashed var(--border);">
+          <label class="form-label" for="photo">Photo Upload</label>
+          <input class="form-input" id="photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp" style="background: white;">
+          <div class="form-help">JPG, PNG, or WEBP · Max 5MB</div>
+          <div class="form-error" data-error-for="photo"></div>
+        </div>
+
+        <div class="flex flex-gap mt-4">
+          <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">Submit Report</button>
+          <a href="/pages/dashboard.html" class="btn btn-secondary btn-lg">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </main>
+  
+  <footer id="site-footer"></footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/report.js"></script>
+</body>
+</html>

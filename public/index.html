@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CivicFix — Report, track, and resolve community issues with full transparency.">
+  <title>CivicFix — Community Issue Reporter</title>
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body class="home-page">
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+
+  <header id="site-header"></header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Live civic platform · Building better communities
+      </div>
+
+      <h1 class="hero-title">
+        Report issues.<br>
+        Track progress.<br>
+        <span class="gradient-text">Fix your community.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        CivicFix connects residents, moderators, and administrators through a single transparent platform. Report a <span class="hero-typed" id="typed-word"></span> in seconds — and watch it get fixed.
+      </p>
+
+      <div class="hero-cta">
+        <a href="/pages/report.html" class="btn-premium btn-premium-primary">
+          🚀 Report an Issue
+        </a>
+        <a href="/pages/issues.html" class="btn-premium btn-premium-outline">
+          Explore Community Issues →
+        </a>
+      </div>
+
+      <div class="hero-stats" id="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-target="0">0</div>
+          <div class="hero-stat-label">Total Reports</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-target="0">0</div>
+          <div class="hero-stat-label">In Progress</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-target="0">0</div>
+          <div class="hero-stat-label">Resolved</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-target="0">0</div>
+          <div class="hero-stat-label">Communities</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CIVICFIX ==================== -->
+  <section class="section-dark" id="why-civicfix">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Why CivicFix</span>
+        <h2 class="section-title">Built for real civic change</h2>
+        <p class="section-desc">Every feature is designed to remove friction between citizens and civic authorities.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-icon">📍</div>
+          <h3>Geo-Tagged Reports</h3>
+          <p>Pin the exact location of the issue with GPS coordinates and photos so teams know precisely where to go.</p>
+        </div>
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-icon">⚡</div>
+          <h3>Real-Time Status Tracking</h3>
+          <p>Watch your report move from Reported → Under Review → In Progress → Resolved with a full audit timeline.</p>
+        </div>
+        <div class="feature-card reveal reveal-d3">
+          <div class="feature-icon">🔔</div>
+          <h3>Smart Notifications</h3>
+          <p>Get notified the moment a moderator verifies your issue, posts an official response, or changes its status.</p>
+        </div>
+        <div class="feature-card reveal reveal-d1">
+          <div class="feature-icon">👥</div>
+          <h3>Community Following</h3>
+          <p>Follow issues that affect you and see how many neighbors care about the same problem.</p>
+        </div>
+        <div class="feature-card reveal reveal-d2">
+          <div class="feature-icon">🛡️</div>
+          <h3>Verified Moderation</h3>
+          <p>Dedicated moderators verify every report before escalation, so authorities only receive confirmed issues.</p>
+        </div>
+        <div class="feature-card reveal reveal-d3">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics & Accountability</h3>
+          <p>Public analytics dashboard shows how many issues are pending, in progress, and resolved — in every region.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="section-darker" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Four steps to resolution</h2>
+        <p class="section-desc">From the moment you report an issue to the moment it's fixed, CivicFix keeps everyone in the loop.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal reveal-d1">
+          <div class="step-num">1</div>
+          <h3>Report</h3>
+          <p>Submit an issue with title, description, category, location, and a photo.</p>
+        </div>
+        <div class="step-card reveal reveal-d2">
+          <div class="step-num">2</div>
+          <h3>Verify</h3>
+          <p>A moderator reviews and verifies the report before escalating it.</p>
+        </div>
+        <div class="step-card reveal reveal-d3">
+          <div class="step-num">3</div>
+          <h3>Resolve</h3>
+          <p>Authorities are notified and the work is tracked through to completion.</p>
+        </div>
+        <div class="step-card reveal reveal-d1">
+          <div class="step-num">4</div>
+          <h3>Track</h3>
+          <p>Everyone following the issue sees the exact moment it's resolved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LIVE PLATFORM ==================== -->
+  <section class="section-dark" id="live-platform">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Live Platform</span>
+        <h2 class="section-title">Full transparency, in real time</h2>
+        <p class="section-desc">Every resident, moderator, and admin sees the same live data — no hidden statuses, no black boxes.</p>
+      </div>
+
+      <div class="app-preview reveal">
+        <div class="app-preview-header">
+          <span class="app-preview-dot"></span>
+          <span class="app-preview-dot"></span>
+          <span class="app-preview-dot"></span>
+        </div>
+        <div class="app-preview-body" id="preview-stats">
+          <div class="preview-stat">
+            <div class="preview-stat-value" id="preview-total">—</div>
+            <div class="preview-stat-label">Total Issues</div>
+          </div>
+          <div class="preview-stat">
+            <div class="preview-stat-value" id="preview-progress">—</div>
+            <div class="preview-stat-label">In Progress</div>
+          </div>
+          <div class="preview-stat">
+            <div class="preview-stat-value" id="preview-resolved">—</div>
+            <div class="preview-stat-label">Resolved</div>
+          </div>
+          <div class="preview-stat">
+            <div class="preview-stat-value" id="preview-rate">—</div>
+            <div class="preview-stat-label">Resolution Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section-darker" style="padding-bottom: 8rem;">
+    <div class="container">
+      <div class="cta-wrap reveal">
+        <h2>Ready to fix your community?</h2>
+        <p>Join thousands of residents making their cities better — one report at a time.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;">
+          <a href="/pages/register.html" class="btn-premium" style="background: white; color: #4f46e5 !important;">Create Free Account</a>
+          <a href="/pages/issues.html" class="btn-premium" style="background: rgba(255,255,255,0.1); color: white !important; border: 1px solid rgba(255,255,255,0.3);">Browse Issues →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <span style="font-size: 1.75rem;">🏛️</span>
+            <span>CivicFix</span>
+          </div>
+          <p class="footer-brand-desc">
+            Bridging residents and civic authorities with a transparent, accountable reporting platform. Report it. Track it. Fix it.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">📦</a>
+            <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-icon" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="/pages/issues.html">Browse Issues</a>
+          <a href="/pages/report.html">Report an Issue</a>
+          <a href="/pages/dashboard.html">Dashboard</a>
+          <a href="/pages/followed.html">Followed Issues</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Account</h4>
+          <a href="/pages/login.html">Log In</a>
+          <a href="/pages/register.html">Create Account</a>
+          <a href="/pages/profile.html">My Profile</a>
+          <a href="/pages/notifications.html">Notifications</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <a href="#why-civicfix">Why CivicFix</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#live-platform">Live Stats</a>
+          <a href="/pages/forgot-password.html">Reset Password</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-inner">
+          <p>© <span id="footer-year"></span> CivicFix. All rights reserved.</p>
+          <p class="footer-bottom-links">
+            <a href="#">Privacy</a>
+            <span>·</span>
+            <a href="#">Terms</a>
+            <span>·</span>
+            <a href="#">Contact</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

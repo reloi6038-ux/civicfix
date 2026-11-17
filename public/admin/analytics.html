@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics — CivicFix</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header id="admin-header" data-title="Analytics"></header>
+      <main class="admin-content">
+        <div id="kpi" class="stats-grid"></div>
+
+        <div class="chart-grid mb-2">
+          <div class="chart-card">
+            <h3>Issues by Category</h3>
+            <div class="canvas-wrap"><canvas id="chart-cat"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Issues by Status</h3>
+            <div class="canvas-wrap"><canvas id="chart-status"></canvas></div>
+          </div>
+        </div>
+
+        <div class="chart-grid mb-2">
+          <div class="chart-card">
+            <h3>Reports Over Time (last 12 months)</h3>
+            <div class="canvas-wrap"><canvas id="chart-time"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <h3>Top 10 Affected Cities</h3>
+            <div class="canvas-wrap"><canvas id="chart-city"></canvas></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="mb-2">Resolution Performance</h3>
+          <div id="resolution-info"></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/admin-js/admin-api.js"></script>
+  <script src="/admin-js/admin-layout.js"></script>
+  <script src="/admin-js/analytics.js"></script>
+</body>
+</html>

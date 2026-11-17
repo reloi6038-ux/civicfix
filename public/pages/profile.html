@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile — CivicFix</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  
+  <main>
+    <div class="container" style="max-width: 720px;">
+      <div class="mb-4">
+        <h1>My Profile</h1>
+        <p class="text-muted">Manage your account settings and location.</p>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <div class="card-title">Account Information</div>
+          <div class="card-subtitle">Update your personal details</div>
+        </div>
+        <form id="profile-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name</label>
+              <input class="form-input" id="name" name="name" type="text" required maxlength="100">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email-display">Email Address</label>
+              <input class="form-input" id="email-display" type="email" disabled style="background: var(--bg); color: var(--text-muted);">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" id="phone" name="phone" type="text" placeholder="+234...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="address">Address</label>
+              <input class="form-input" id="address" name="address" type="text" placeholder="123 Main St">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="city">City</label>
+              <input class="form-input" id="city" name="city" type="text">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="state">State</label>
+              <input class="form-input" id="state" name="state" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="country">Country</label>
+            <input class="form-input" id="country" name="country" type="text">
+          </div>
+          <button type="submit" class="btn btn-primary mt-2" id="profile-submit">Save Changes</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Change Password</div>
+          <div class="card-subtitle">Ensure your account stays secure</div>
+        </div>
+        <form id="password-form">
+          <div class="form-group">
+            <label class="form-label" for="currentPassword">Current Password</label>
+            <input class="form-input" id="currentPassword" name="currentPassword" type="password" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="newPassword">New Password</label>
+            <input class="form-input" id="newPassword" name="newPassword" type="password" required minlength="8">
+            <div class="form-help">Must be at least 8 characters long.</div>
+          </div>
+          <button type="submit" class="btn btn-secondary mt-2" id="password-submit">Change Password</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+  <footer id="site-footer"></footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/profile.js"></script>
+</body>
+</html>

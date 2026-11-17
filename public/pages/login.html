@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In — CivicFix</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  
+  <main>
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <h1 class="auth-title">Welcome Back</h1>
+        <p class="auth-subtitle">Log in to track your reports and community issues</p>
+
+        <form id="login-form" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="required">*</span></label>
+            <input class="form-input" id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com">
+            <div class="form-error" data-error-for="email"></div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="password">Password <span class="required">*</span></label>
+            <input class="form-input" id="password" name="password" type="password" required autocomplete="current-password" placeholder="••••••••">
+            <div class="form-error" data-error-for="password"></div>
+          </div>
+
+          <div class="flex-between" style="margin: 0.5rem 0 1.5rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; cursor: pointer; color: var(--text-muted);">
+              <input type="checkbox" id="show-password">
+              Show password
+            </label>
+            <a href="/pages/forgot-password.html" style="font-size: 0.875rem; font-weight: 600;">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">Log In</button>
+        </form>
+
+        <p class="auth-footer">Don't have an account? <a href="/pages/register.html">Sign up</a></p>
+      </div>
+    </div>
+  </main>
+  
+  <footer id="site-footer"></footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

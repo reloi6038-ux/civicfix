@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Logs — CivicFix</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-shell">
+    <aside id="admin-sidebar"></aside>
+    <div class="admin-main">
+      <header id="admin-header" data-title="Audit Logs"></header>
+      <main class="admin-content">
+        <form id="audit-filters" class="filters-bar" style="margin-bottom: 1rem;">
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label">Action</label>
+            <input class="form-input" id="action" placeholder="e.g. ISSUE_VERIFIED">
+          </div>
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label">Resource</label>
+            <select class="form-select" id="resource">
+              <option value="">All</option>
+              <option value="Issue">Issue</option>
+              <option value="User">User</option>
+              <option value="Category">Category</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit">Filter</button>
+        </form>
+        <div id="audit-table"><div class="loading-block"><span class="spinner"></span>Loading…</div></div>
+        <div id="pagination" class="pagination"></div>
+      </main>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/admin-js/admin-api.js"></script>
+  <script src="/admin-js/admin-layout.js"></script>
+  <script src="/admin-js/audit-logs.js"></script>
+</body>
+</html>

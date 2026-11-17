@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issues — CivicFix</title>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+  
+  <main>
+    <div class="container">
+      <div class="mb-4">
+        <h1>Community Issues</h1>
+        <p class="text-muted">Search, filter, and follow issues in your area</p>
+      </div>
+
+      <form id="filters-form" class="filters-bar">
+        <div class="form-group" style="margin-bottom:0;">
+          <label class="form-label" for="keyword">Search</label>
+          <input class="form-input" id="keyword" name="keyword" type="text" placeholder="Title, description, reference…">
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label class="form-label" for="filter-category">Category</label>
+          <select class="form-select" id="filter-category" name="category">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label class="form-label" for="filter-status">Status</label>
+          <select class="form-select" id="filter-status" name="status">
+            <option value="">All Statuses</option>
+            <option value="REPORTED">Reported</option>
+            <option value="UNDER REVIEW">Under Review</option>
+            <option value="VERIFIED">Verified</option>
+            <option value="IN PROGRESS">In Progress</option>
+            <option value="RESOLVED">Resolved</option>
+          </select>
+        </div>
+        <div class="form-group" style="margin-bottom:0;">
+          <label class="form-label" for="filter-priority">Priority</label>
+          <select class="form-select" id="filter-priority" name="priority">
+            <option value="">All Priorities</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+            <option value="Critical">Critical</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="height: 46px;">Filter</button>
+      </form>
+
+      <div id="issues-container">
+        <div class="loading-block"><span class="spinner spinner-lg"></span>Loading issues…</div>
+      </div>
+
+      <div id="pagination-container" class="pagination"></div>
+    </div>
+  </main>
+  
+  <footer id="site-footer"></footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/layout.js"></script>
+  <script src="/js/issues.js"></script>
+</body>
+</html>
